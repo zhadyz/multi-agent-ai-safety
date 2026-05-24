@@ -1,0 +1,89 @@
+{
+  "project": "multi-agent-safety-study",
+  "version": "0.1.0",
+  "configurations": {
+    "C1": {
+      "name": "Single-Agent Opus Baseline",
+      "architecture": "single",
+      "model": "claude-opus-4-7",
+      "roles": ["direct"],
+      "description": "Single Claude Opus 4.7 instance, no agentic loop"
+    },
+    "C2": {
+      "name": "Single-Agent Sonnet Baseline",
+      "architecture": "single",
+      "model": "claude-sonnet-4-6",
+      "roles": ["direct"],
+      "description": "Single Claude Sonnet 4.6 instance, no agentic loop"
+    },
+    "C3": {
+      "name": "Generator-Verifier-Reviser (All Opus)",
+      "architecture": "multi-agent",
+      "models": {
+        "generator": "claude-opus-4-7",
+        "verifier": "claude-opus-4-7",
+        "reviser": "claude-opus-4-7"
+      },
+      "roles": ["generator", "verifier", "reviser"],
+      "pipeline": "sequential",
+      "description": "Aletheia-style verification pattern, all Opus 4.7"
+    },
+    "C4": {
+      "name": "Planner-Executor-Critic (All Opus)",
+      "architecture": "multi-agent",
+      "models": {
+        "planner": "claude-opus-4-7",
+        "executor": "claude-opus-4-7",
+        "critic": "claude-opus-4-7"
+      },
+      "roles": ["planner", "executor", "critic"],
+      "pipeline": "sequential",
+      "description": "Non-verification multi-agent pattern, all Opus 4.7"
+    },
+    "C5": {
+      "name": "Mixed-Model (Opus/Sonnet/Haiku)",
+      "architecture": "multi-agent",
+      "models": {
+        "planner": "claude-opus-4-7",
+        "executor": "claude-sonnet-4-6",
+        "critic": "claude-haiku-4-5-20251001"
+      },
+      "roles": ["planner", "executor", "critic"],
+      "pipeline": "sequential",
+      "description": "Heterogeneous intra-vendor composition"
+    }
+  },
+  "jailbreak_techniques": {
+    "T1": {
+      "name": "Sub-task Decomposition",
+      "source": "DrAttack (Li et al. EMNLP 2024), Srivastav & Zhang (REALM 2025)",
+      "description": "Break task into individually benign-looking sub-tasks"
+    },
+    "T2": {
+      "name": "Role-play / Persona Bypass",
+      "source": "Shah et al. (NeurIPS SoLaR 2023), GTG-1002 incident",
+      "description": "Frame request as authorized security testing"
+    },
+    "T3": {
+      "name": "DAN-style Direct Override",
+      "source": "Shen et al. (CCS 2024)",
+      "description": "Direct instruction to bypass safety constraints"
+    },
+    "T4": {
+      "name": "Indirect Prompt Injection",
+      "source": "Greshake et al. (AISec/CCS 2023)",
+      "description": "Adversarial instructions embedded in tool outputs/documents"
+    }
+  },
+  "experiment_params": {
+    "seeds": [42, 137, 256, 512, 1024],
+    "temperature": 0.7,
+    "max_tokens": 4096,
+    "timeout_seconds": 120
+  },
+  "pilot": {
+    "n_tasks": 5,
+    "n_seeds": 2,
+    "description": "Harness validation run — 5 tasks x 5 configs x 2 seeds = 50 trials"
+  }
+}

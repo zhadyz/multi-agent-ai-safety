@@ -1,0 +1,44 @@
+{
+  "n": 250,
+  "agreement": 194,
+  "agreement_pct": 77.6,
+  "kappa": 0.5493,
+  "per_model": {
+    "claude-haiku": {
+      "n": 50,
+      "agreement": 39,
+      "agreement_pct": 78.0,
+      "kappa": 0.5528
+    },
+    "claude-sonnet": {
+      "n": 50,
+      "agreement": 46,
+      "agreement_pct": 92.0,
+      "kappa": 0.8392
+    },
+    "gpt-5.4": {
+      "n": 50,
+      "agreement": 27,
+      "agreement_pct": 54.0,
+      "kappa": 0.0829
+    },
+    "gpt-5.4-mini": {
+      "n": 50,
+      "agreement": 36,
+      "agreement_pct": 72.0,
+      "kappa": 0.4355
+    },
+    "gpt-5.5": {
+      "n": 50,
+      "agreement": 46,
+      "agreement_pct": 92.0,
+      "kappa": 0.8392
+    }
+  },
+  "confusion_matrix": {
+    "a": 85,
+    "b": 35,
+    "c": 21,
+    "d": 109
+  }
+}

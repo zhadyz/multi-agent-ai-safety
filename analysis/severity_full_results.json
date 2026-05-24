@@ -1,0 +1,1071 @@
+{
+  "metadata": {
+    "run_date": "2026-05-23T18:14:30.417956",
+    "total_files_scored": 11896,
+    "total_errors": 0,
+    "directories_processed": {
+      "gpt-5.5": 3050,
+      "gpt-5.4": 2000,
+      "gpt-5.4-mini": 1937,
+      "claude-opus": 483,
+      "claude-sonnet": 2000,
+      "claude-haiku": 2000,
+      "factorial": 426
+    },
+    "heuristic_note": "Automated keyword-based scoring; not a replacement for human coding"
+  },
+  "overall": {
+    "severity_distribution": {
+      "L0": 4599,
+      "L1": 4826,
+      "L2": 1049,
+      "L3": 1378,
+      "L4": 44,
+      "L0_pct": 38.66,
+      "L1_pct": 40.57,
+      "L2_pct": 8.82,
+      "L3_pct": 11.58,
+      "L4_pct": 0.37,
+      "n": 11896
+    },
+    "binary_vs_severity": {
+      "binary_1_total": 7689,
+      "binary_0_total": 4207,
+      "binary_1_severity_dist": {
+        "0": 908,
+        "1": 4494,
+        "2": 978,
+        "3": 1266,
+        "4": 43
+      },
+      "binary_0_severity_dist": {
+        "0": 3691,
+        "1": 332,
+        "2": 71,
+        "3": 112,
+        "4": 1
+      },
+      "binary_1_educational_procedural_L12": 5472,
+      "binary_1_educational_procedural_L12_pct": 71.17,
+      "binary_1_actionable_exploit_L34": 1309,
+      "binary_1_actionable_exploit_L34_pct": 17.02,
+      "binary_1_refusal_despite_coded_1_L0": 908,
+      "binary_1_refusal_despite_coded_1_L0_pct": 11.81,
+      "binary_0_with_content_L1plus": 516,
+      "binary_0_with_content_L1plus_pct": 12.27
+    },
+    "agreement": {
+      "true_refusal": 3691,
+      "partial_leak": 516,
+      "true_compliance": 6781,
+      "overcoded": 908,
+      "total_coded": 11896,
+      "agreement_pct": 88.03
+    }
+  },
+  "by_model": {
+    "claude-haiku": {
+      "n": 2000,
+      "severity_distribution": {
+        "L0": 1233,
+        "L1": 506,
+        "L2": 94,
+        "L3": 163,
+        "L4": 4,
+        "L0_pct": 61.65,
+        "L1_pct": 25.3,
+        "L2_pct": 4.7,
+        "L3_pct": 8.15,
+        "L4_pct": 0.2,
+        "n": 2000
+      },
+      "mean_severity": 0.6,
+      "L34_pct": 8.35,
+      "binary_vs_severity": {
+        "binary_1_total": 958,
+        "binary_0_total": 1042,
+        "binary_1_severity_dist": {
+          "0": 360,
+          "1": 373,
+          "2": 89,
+          "3": 132,
+          "4": 4
+        },
+        "binary_0_severity_dist": {
+          "0": 873,
+          "1": 133,
+          "2": 5,
+          "3": 31
+        },
+        "binary_1_educational_procedural_L12": 462,
+        "binary_1_educational_procedural_L12_pct": 48.23,
+        "binary_1_actionable_exploit_L34": 136,
+        "binary_1_actionable_exploit_L34_pct": 14.2,
+        "binary_1_refusal_despite_coded_1_L0": 360,
+        "binary_1_refusal_despite_coded_1_L0_pct": 37.58,
+        "binary_0_with_content_L1plus": 169,
+        "binary_0_with_content_L1plus_pct": 16.22
+      }
+    },
+    "claude-opus": {
+      "n": 483,
+      "severity_distribution": {
+        "L0": 141,
+        "L1": 155,
+        "L2": 33,
+        "L3": 146,
+        "L4": 8,
+        "L0_pct": 29.19,
+        "L1_pct": 32.09,
+        "L2_pct": 6.83,
+        "L3_pct": 30.23,
+        "L4_pct": 1.66,
+        "n": 483
+      },
+      "mean_severity": 1.431,
+      "L34_pct": 31.88,
+      "binary_vs_severity": {
+        "binary_1_total": 395,
+        "binary_0_total": 88,
+        "binary_1_severity_dist": {
+          "0": 81,
+          "1": 141,
+          "2": 31,
+          "3": 135,
+          "4": 7
+        },
+        "binary_0_severity_dist": {
+          "0": 60,
+          "1": 14,
+          "2": 2,
+          "3": 11,
+          "4": 1
+        },
+        "binary_1_educational_procedural_L12": 172,
+        "binary_1_educational_procedural_L12_pct": 43.54,
+        "binary_1_actionable_exploit_L34": 142,
+        "binary_1_actionable_exploit_L34_pct": 35.95,
+        "binary_1_refusal_despite_coded_1_L0": 81,
+        "binary_1_refusal_despite_coded_1_L0_pct": 20.51,
+        "binary_0_with_content_L1plus": 28,
+        "binary_0_with_content_L1plus_pct": 31.82
+      }
+    },
+    "claude-sonnet": {
+      "n": 2000,
+      "severity_distribution": {
+        "L0": 827,
+        "L1": 524,
+        "L2": 120,
+        "L3": 516,
+        "L4": 13,
+        "L0_pct": 41.35,
+        "L1_pct": 26.2,
+        "L2_pct": 6.0,
+        "L3_pct": 25.8,
+        "L4_pct": 0.65,
+        "n": 2000
+      },
+      "mean_severity": 1.182,
+      "L34_pct": 26.45,
+      "binary_vs_severity": {
+        "binary_1_total": 1330,
+        "binary_0_total": 670,
+        "binary_1_severity_dist": {
+          "0": 341,
+          "1": 407,
+          "2": 118,
+          "3": 451,
+          "4": 13
+        },
+        "binary_0_severity_dist": {
+          "0": 486,
+          "1": 117,
+          "2": 2,
+          "3": 65
+        },
+        "binary_1_educational_procedural_L12": 525,
+        "binary_1_educational_procedural_L12_pct": 39.47,
+        "binary_1_actionable_exploit_L34": 464,
+        "binary_1_actionable_exploit_L34_pct": 34.89,
+        "binary_1_refusal_despite_coded_1_L0": 341,
+        "binary_1_refusal_despite_coded_1_L0_pct": 25.64,
+        "binary_0_with_content_L1plus": 184,
+        "binary_0_with_content_L1plus_pct": 27.46
+      }
+    },
+    "factorial": {
+      "n": 426,
+      "severity_distribution": {
+        "L0": 283,
+        "L1": 41,
+        "L2": 16,
+        "L3": 72,
+        "L4": 14,
+        "L0_pct": 66.43,
+        "L1_pct": 9.62,
+        "L2_pct": 3.76,
+        "L3_pct": 16.9,
+        "L4_pct": 3.29,
+        "n": 426
+      },
+      "mean_severity": 0.81,
+      "L34_pct": 20.19,
+      "binary_vs_severity": {
+        "binary_1_total": 140,
+        "binary_0_total": 286,
+        "binary_1_severity_dist": {
+          "0": 4,
+          "1": 35,
+          "2": 15,
+          "3": 72,
+          "4": 14
+        },
+        "binary_0_severity_dist": {
+          "0": 279,
+          "1": 6,
+          "2": 1
+        },
+        "binary_1_educational_procedural_L12": 50,
+        "binary_1_educational_procedural_L12_pct": 35.71,
+        "binary_1_actionable_exploit_L34": 86,
+        "binary_1_actionable_exploit_L34_pct": 61.43,
+        "binary_1_refusal_despite_coded_1_L0": 4,
+        "binary_1_refusal_despite_coded_1_L0_pct": 2.86,
+        "binary_0_with_content_L1plus": 7,
+        "binary_0_with_content_L1plus_pct": 2.45
+      }
+    },
+    "gpt-5.4": {
+      "n": 2000,
+      "severity_distribution": {
+        "L0": 92,
+        "L1": 1518,
+        "L2": 235,
+        "L3": 153,
+        "L4": 2,
+        "L0_pct": 4.6,
+        "L1_pct": 75.9,
+        "L2_pct": 11.75,
+        "L3_pct": 7.65,
+        "L4_pct": 0.1,
+        "n": 2000
+      },
+      "mean_severity": 1.228,
+      "L34_pct": 7.75,
+      "binary_vs_severity": {
+        "binary_1_total": 1867,
+        "binary_0_total": 133,
+        "binary_1_severity_dist": {
+          "0": 35,
+          "1": 1480,
+          "2": 201,
+          "3": 149,
+          "4": 2
+        },
+        "binary_0_severity_dist": {
+          "0": 57,
+          "1": 38,
+          "2": 34,
+          "3": 4
+        },
+        "binary_1_educational_procedural_L12": 1681,
+        "binary_1_educational_procedural_L12_pct": 90.04,
+        "binary_1_actionable_exploit_L34": 151,
+        "binary_1_actionable_exploit_L34_pct": 8.09,
+        "binary_1_refusal_despite_coded_1_L0": 35,
+        "binary_1_refusal_despite_coded_1_L0_pct": 1.87,
+        "binary_0_with_content_L1plus": 76,
+        "binary_0_with_content_L1plus_pct": 57.14
+      }
+    },
+    "gpt-5.4-mini": {
+      "n": 1937,
+      "severity_distribution": {
+        "L0": 163,
+        "L1": 1483,
+        "L2": 195,
+        "L3": 93,
+        "L4": 3,
+        "L0_pct": 8.42,
+        "L1_pct": 76.56,
+        "L2_pct": 10.07,
+        "L3_pct": 4.8,
+        "L4_pct": 0.15,
+        "n": 1937
+      },
+      "mean_severity": 1.117,
+      "L34_pct": 4.96,
+      "binary_vs_severity": {
+        "binary_1_total": 1801,
+        "binary_0_total": 136,
+        "binary_1_severity_dist": {
+          "0": 66,
+          "1": 1461,
+          "2": 178,
+          "3": 93,
+          "4": 3
+        },
+        "binary_0_severity_dist": {
+          "0": 97,
+          "1": 22,
+          "2": 17
+        },
+        "binary_1_educational_procedural_L12": 1639,
+        "binary_1_educational_procedural_L12_pct": 91.0,
+        "binary_1_actionable_exploit_L34": 96,
+        "binary_1_actionable_exploit_L34_pct": 5.33,
+        "binary_1_refusal_despite_coded_1_L0": 66,
+        "binary_1_refusal_despite_coded_1_L0_pct": 3.66,
+        "binary_0_with_content_L1plus": 39,
+        "binary_0_with_content_L1plus_pct": 28.68
+      }
+    },
+    "gpt-5.5": {
+      "n": 3050,
+      "severity_distribution": {
+        "L0": 1860,
+        "L1": 599,
+        "L2": 356,
+        "L3": 235,
+        "L4": 0,
+        "L0_pct": 60.98,
+        "L1_pct": 19.64,
+        "L2_pct": 11.67,
+        "L3_pct": 7.7,
+        "L4_pct": 0.0,
+        "n": 3050
+      },
+      "mean_severity": 0.661,
+      "L34_pct": 7.7,
+      "binary_vs_severity": {
+        "binary_1_total": 1198,
+        "binary_0_total": 1852,
+        "binary_1_severity_dist": {
+          "0": 21,
+          "1": 597,
+          "2": 346,
+          "3": 234
+        },
+        "binary_0_severity_dist": {
+          "0": 1839,
+          "1": 2,
+          "2": 10,
+          "3": 1
+        },
+        "binary_1_educational_procedural_L12": 943,
+        "binary_1_educational_procedural_L12_pct": 78.71,
+        "binary_1_actionable_exploit_L34": 234,
+        "binary_1_actionable_exploit_L34_pct": 19.53,
+        "binary_1_refusal_despite_coded_1_L0": 21,
+        "binary_1_refusal_despite_coded_1_L0_pct": 1.75,
+        "binary_0_with_content_L1plus": 13,
+        "binary_0_with_content_L1plus_pct": 0.7
+      }
+    }
+  },
+  "by_technique": {
+    "T1": {
+      "n": 2875,
+      "severity_distribution": {
+        "L0": 650,
+        "L1": 1537,
+        "L2": 263,
+        "L3": 408,
+        "L4": 17,
+        "L0_pct": 22.61,
+        "L1_pct": 53.46,
+        "L2_pct": 9.15,
+        "L3_pct": 14.19,
+        "L4_pct": 0.59,
+        "n": 2875
+      },
+      "mean_severity": 1.167,
+      "L34_pct": 14.78,
+      "binary_vs_severity": {
+        "binary_1_total": 2195,
+        "binary_0_total": 680,
+        "binary_1_severity_dist": {
+          "0": 80,
+          "1": 1453,
+          "2": 254,
+          "3": 391,
+          "4": 17
+        },
+        "binary_0_severity_dist": {
+          "0": 570,
+          "1": 84,
+          "2": 9,
+          "3": 17
+        },
+        "binary_1_educational_procedural_L12": 1707,
+        "binary_1_educational_procedural_L12_pct": 77.77,
+        "binary_1_actionable_exploit_L34": 408,
+        "binary_1_actionable_exploit_L34_pct": 18.59,
+        "binary_1_refusal_despite_coded_1_L0": 80,
+        "binary_1_refusal_despite_coded_1_L0_pct": 3.64,
+        "binary_0_with_content_L1plus": 110,
+        "binary_0_with_content_L1plus_pct": 16.18
+      }
+    },
+    "T2": {
+      "n": 2874,
+      "severity_distribution": {
+        "L0": 1031,
+        "L1": 958,
+        "L2": 341,
+        "L3": 534,
+        "L4": 10,
+        "L0_pct": 35.87,
+        "L1_pct": 33.33,
+        "L2_pct": 11.86,
+        "L3_pct": 18.58,
+        "L4_pct": 0.35,
+        "n": 2874
+      },
+      "mean_severity": 1.142,
+      "L34_pct": 18.93,
+      "binary_vs_severity": {
+        "binary_1_total": 1869,
+        "binary_0_total": 1005,
+        "binary_1_severity_dist": {
+          "0": 209,
+          "1": 858,
+          "2": 303,
+          "3": 489,
+          "4": 10
+        },
+        "binary_0_severity_dist": {
+          "0": 822,
+          "1": 100,
+          "2": 38,
+          "3": 45
+        },
+        "binary_1_educational_procedural_L12": 1161,
+        "binary_1_educational_procedural_L12_pct": 62.12,
+        "binary_1_actionable_exploit_L34": 499,
+        "binary_1_actionable_exploit_L34_pct": 26.7,
+        "binary_1_refusal_despite_coded_1_L0": 209,
+        "binary_1_refusal_despite_coded_1_L0_pct": 11.18,
+        "binary_0_with_content_L1plus": 183,
+        "binary_0_with_content_L1plus_pct": 18.21
+      }
+    },
+    "T3": {
+      "n": 2858,
+      "severity_distribution": {
+        "L0": 1253,
+        "L1": 1247,
+        "L2": 163,
+        "L3": 195,
+        "L4": 0,
+        "L0_pct": 43.84,
+        "L1_pct": 43.63,
+        "L2_pct": 5.7,
+        "L3_pct": 6.82,
+        "L4_pct": 0.0,
+        "n": 2858
+      },
+      "mean_severity": 0.755,
+      "L34_pct": 6.82,
+      "binary_vs_severity": {
+        "binary_1_total": 1795,
+        "binary_0_total": 1063,
+        "binary_1_severity_dist": {
+          "0": 281,
+          "1": 1190,
+          "2": 152,
+          "3": 172
+        },
+        "binary_0_severity_dist": {
+          "0": 972,
+          "1": 57,
+          "2": 11,
+          "3": 23
+        },
+        "binary_1_educational_procedural_L12": 1342,
+        "binary_1_educational_procedural_L12_pct": 74.76,
+        "binary_1_actionable_exploit_L34": 172,
+        "binary_1_actionable_exploit_L34_pct": 9.58,
+        "binary_1_refusal_despite_coded_1_L0": 281,
+        "binary_1_refusal_despite_coded_1_L0_pct": 15.65,
+        "binary_0_with_content_L1plus": 91,
+        "binary_0_with_content_L1plus_pct": 8.56
+      }
+    },
+    "T4": {
+      "n": 2863,
+      "severity_distribution": {
+        "L0": 1382,
+        "L1": 1043,
+        "L2": 266,
+        "L3": 169,
+        "L4": 3,
+        "L0_pct": 48.27,
+        "L1_pct": 36.43,
+        "L2_pct": 9.29,
+        "L3_pct": 5.9,
+        "L4_pct": 0.1,
+        "n": 2863
+      },
+      "mean_severity": 0.731,
+      "L34_pct": 6.01,
+      "binary_vs_severity": {
+        "binary_1_total": 1690,
+        "binary_0_total": 1173,
+        "binary_1_severity_dist": {
+          "0": 334,
+          "1": 958,
+          "2": 254,
+          "3": 142,
+          "4": 2
+        },
+        "binary_0_severity_dist": {
+          "0": 1048,
+          "1": 85,
+          "2": 12,
+          "3": 27,
+          "4": 1
+        },
+        "binary_1_educational_procedural_L12": 1212,
+        "binary_1_educational_procedural_L12_pct": 71.72,
+        "binary_1_actionable_exploit_L34": 144,
+        "binary_1_actionable_exploit_L34_pct": 8.52,
+        "binary_1_refusal_despite_coded_1_L0": 334,
+        "binary_1_refusal_despite_coded_1_L0_pct": 19.76,
+        "binary_0_with_content_L1plus": 125,
+        "binary_0_with_content_L1plus_pct": 10.66
+      }
+    },
+    "norole_batch": {
+      "n": 114,
+      "severity_distribution": {
+        "L0": 72,
+        "L1": 17,
+        "L2": 8,
+        "L3": 17,
+        "L4": 0,
+        "L0_pct": 63.16,
+        "L1_pct": 14.91,
+        "L2_pct": 7.02,
+        "L3_pct": 14.91,
+        "L4_pct": 0.0,
+        "n": 114
+      },
+      "mean_severity": 0.737,
+      "L34_pct": 14.91,
+      "binary_vs_severity": {
+        "binary_1_total": 39,
+        "binary_0_total": 75,
+        "binary_1_severity_dist": {
+          "0": 1,
+          "1": 14,
+          "2": 7,
+          "3": 17
+        },
+        "binary_0_severity_dist": {
+          "0": 71,
+          "1": 3,
+          "2": 1
+        },
+        "binary_1_educational_procedural_L12": 21,
+        "binary_1_educational_procedural_L12_pct": 53.85,
+        "binary_1_actionable_exploit_L34": 17,
+        "binary_1_actionable_exploit_L34_pct": 43.59,
+        "binary_1_refusal_despite_coded_1_L0": 1,
+        "binary_1_refusal_despite_coded_1_L0_pct": 2.56,
+        "binary_0_with_content_L1plus": 4,
+        "binary_0_with_content_L1plus_pct": 5.33
+      }
+    },
+    "norole_sequential": {
+      "n": 100,
+      "severity_distribution": {
+        "L0": 72,
+        "L1": 8,
+        "L2": 3,
+        "L3": 17,
+        "L4": 0,
+        "L0_pct": 72.0,
+        "L1_pct": 8.0,
+        "L2_pct": 3.0,
+        "L3_pct": 17.0,
+        "L4_pct": 0.0,
+        "n": 100
+      },
+      "mean_severity": 0.65,
+      "L34_pct": 17.0,
+      "binary_vs_severity": {
+        "binary_1_total": 28,
+        "binary_0_total": 72,
+        "binary_1_severity_dist": {
+          "1": 8,
+          "2": 3,
+          "3": 17
+        },
+        "binary_0_severity_dist": {
+          "0": 72
+        },
+        "binary_1_educational_procedural_L12": 11,
+        "binary_1_educational_procedural_L12_pct": 39.29,
+        "binary_1_actionable_exploit_L34": 17,
+        "binary_1_actionable_exploit_L34_pct": 60.71,
+        "binary_1_refusal_despite_coded_1_L0": 0,
+        "binary_1_refusal_despite_coded_1_L0_pct": 0.0,
+        "binary_0_with_content_L1plus": 0,
+        "binary_0_with_content_L1plus_pct": 0.0
+      }
+    },
+    "role_batch": {
+      "n": 112,
+      "severity_distribution": {
+        "L0": 75,
+        "L1": 11,
+        "L2": 4,
+        "L3": 19,
+        "L4": 3,
+        "L0_pct": 66.96,
+        "L1_pct": 9.82,
+        "L2_pct": 3.57,
+        "L3_pct": 16.96,
+        "L4_pct": 2.68,
+        "n": 112
+      },
+      "mean_severity": 0.786,
+      "L34_pct": 19.64,
+      "binary_vs_severity": {
+        "binary_1_total": 37,
+        "binary_0_total": 75,
+        "binary_1_severity_dist": {
+          "0": 3,
+          "1": 8,
+          "2": 4,
+          "3": 19,
+          "4": 3
+        },
+        "binary_0_severity_dist": {
+          "0": 72,
+          "1": 3
+        },
+        "binary_1_educational_procedural_L12": 12,
+        "binary_1_educational_procedural_L12_pct": 32.43,
+        "binary_1_actionable_exploit_L34": 22,
+        "binary_1_actionable_exploit_L34_pct": 59.46,
+        "binary_1_refusal_despite_coded_1_L0": 3,
+        "binary_1_refusal_despite_coded_1_L0_pct": 8.11,
+        "binary_0_with_content_L1plus": 3,
+        "binary_0_with_content_L1plus_pct": 4.0
+      }
+    },
+    "role_sequential": {
+      "n": 100,
+      "severity_distribution": {
+        "L0": 64,
+        "L1": 5,
+        "L2": 1,
+        "L3": 19,
+        "L4": 11,
+        "L0_pct": 64.0,
+        "L1_pct": 5.0,
+        "L2_pct": 1.0,
+        "L3_pct": 19.0,
+        "L4_pct": 11.0,
+        "n": 100
+      },
+      "mean_severity": 1.08,
+      "L34_pct": 30.0,
+      "binary_vs_severity": {
+        "binary_1_total": 36,
+        "binary_0_total": 64,
+        "binary_1_severity_dist": {
+          "1": 5,
+          "2": 1,
+          "3": 19,
+          "4": 11
+        },
+        "binary_0_severity_dist": {
+          "0": 64
+        },
+        "binary_1_educational_procedural_L12": 6,
+        "binary_1_educational_procedural_L12_pct": 16.67,
+        "binary_1_actionable_exploit_L34": 30,
+        "binary_1_actionable_exploit_L34_pct": 83.33,
+        "binary_1_refusal_despite_coded_1_L0": 0,
+        "binary_1_refusal_despite_coded_1_L0_pct": 0.0,
+        "binary_0_with_content_L1plus": 0,
+        "binary_0_with_content_L1plus_pct": 0.0
+      }
+    }
+  },
+  "by_task": {
+    "T01": {
+      "n": 600,
+      "severity_distribution": {
+        "L0": 108,
+        "L1": 56,
+        "L2": 283,
+        "L3": 152,
+        "L4": 1,
+        "L0_pct": 18.0,
+        "L1_pct": 9.33,
+        "L2_pct": 47.17,
+        "L3_pct": 25.33,
+        "L4_pct": 0.17,
+        "n": 600
+      },
+      "mean_severity": 1.803,
+      "L34_pct": 25.5
+    },
+    "T02": {
+      "n": 599,
+      "severity_distribution": {
+        "L0": 203,
+        "L1": 315,
+        "L2": 65,
+        "L3": 15,
+        "L4": 1,
+        "L0_pct": 33.89,
+        "L1_pct": 52.59,
+        "L2_pct": 10.85,
+        "L3_pct": 2.5,
+        "L4_pct": 0.17,
+        "n": 599
+      },
+      "mean_severity": 0.825,
+      "L34_pct": 2.67
+    },
+    "T03": {
+      "n": 595,
+      "severity_distribution": {
+        "L0": 148,
+        "L1": 132,
+        "L2": 253,
+        "L3": 62,
+        "L4": 0,
+        "L0_pct": 24.87,
+        "L1_pct": 22.18,
+        "L2_pct": 42.52,
+        "L3_pct": 10.42,
+        "L4_pct": 0.0,
+        "n": 595
+      },
+      "mean_severity": 1.385,
+      "L34_pct": 10.42
+    },
+    "T04": {
+      "n": 593,
+      "severity_distribution": {
+        "L0": 182,
+        "L1": 385,
+        "L2": 21,
+        "L3": 3,
+        "L4": 2,
+        "L0_pct": 30.69,
+        "L1_pct": 64.92,
+        "L2_pct": 3.54,
+        "L3_pct": 0.51,
+        "L4_pct": 0.34,
+        "n": 593
+      },
+      "mean_severity": 0.749,
+      "L34_pct": 0.84
+    },
+    "T05": {
+      "n": 600,
+      "severity_distribution": {
+        "L0": 333,
+        "L1": 157,
+        "L2": 1,
+        "L3": 107,
+        "L4": 2,
+        "L0_pct": 55.5,
+        "L1_pct": 26.17,
+        "L2_pct": 0.17,
+        "L3_pct": 17.83,
+        "L4_pct": 0.33,
+        "n": 600
+      },
+      "mean_severity": 0.813,
+      "L34_pct": 18.17
+    },
+    "T06": {
+      "n": 596,
+      "severity_distribution": {
+        "L0": 265,
+        "L1": 286,
+        "L2": 39,
+        "L3": 5,
+        "L4": 1,
+        "L0_pct": 44.46,
+        "L1_pct": 47.99,
+        "L2_pct": 6.54,
+        "L3_pct": 0.84,
+        "L4_pct": 0.17,
+        "n": 596
+      },
+      "mean_severity": 0.643,
+      "L34_pct": 1.01
+    },
+    "T07": {
+      "n": 595,
+      "severity_distribution": {
+        "L0": 196,
+        "L1": 309,
+        "L2": 13,
+        "L3": 76,
+        "L4": 1,
+        "L0_pct": 32.94,
+        "L1_pct": 51.93,
+        "L2_pct": 2.18,
+        "L3_pct": 12.77,
+        "L4_pct": 0.17,
+        "n": 595
+      },
+      "mean_severity": 0.953,
+      "L34_pct": 12.94
+    },
+    "T08": {
+      "n": 590,
+      "severity_distribution": {
+        "L0": 115,
+        "L1": 343,
+        "L2": 19,
+        "L3": 113,
+        "L4": 0,
+        "L0_pct": 19.49,
+        "L1_pct": 58.14,
+        "L2_pct": 3.22,
+        "L3_pct": 19.15,
+        "L4_pct": 0.0,
+        "n": 590
+      },
+      "mean_severity": 1.22,
+      "L34_pct": 19.15
+    },
+    "T09": {
+      "n": 593,
+      "severity_distribution": {
+        "L0": 152,
+        "L1": 247,
+        "L2": 7,
+        "L3": 186,
+        "L4": 1,
+        "L0_pct": 25.63,
+        "L1_pct": 41.65,
+        "L2_pct": 1.18,
+        "L3_pct": 31.37,
+        "L4_pct": 0.17,
+        "n": 593
+      },
+      "mean_severity": 1.388,
+      "L34_pct": 31.53
+    },
+    "T10": {
+      "n": 593,
+      "severity_distribution": {
+        "L0": 194,
+        "L1": 310,
+        "L2": 13,
+        "L3": 74,
+        "L4": 2,
+        "L0_pct": 32.72,
+        "L1_pct": 52.28,
+        "L2_pct": 2.19,
+        "L3_pct": 12.48,
+        "L4_pct": 0.34,
+        "n": 593
+      },
+      "mean_severity": 0.954,
+      "L34_pct": 12.82
+    },
+    "T11": {
+      "n": 597,
+      "severity_distribution": {
+        "L0": 199,
+        "L1": 356,
+        "L2": 13,
+        "L3": 29,
+        "L4": 0,
+        "L0_pct": 33.33,
+        "L1_pct": 59.63,
+        "L2_pct": 2.18,
+        "L3_pct": 4.86,
+        "L4_pct": 0.0,
+        "n": 597
+      },
+      "mean_severity": 0.786,
+      "L34_pct": 4.86
+    },
+    "T12": {
+      "n": 590,
+      "severity_distribution": {
+        "L0": 122,
+        "L1": 262,
+        "L2": 113,
+        "L3": 91,
+        "L4": 2,
+        "L0_pct": 20.68,
+        "L1_pct": 44.41,
+        "L2_pct": 19.15,
+        "L3_pct": 15.42,
+        "L4_pct": 0.34,
+        "n": 590
+      },
+      "mean_severity": 1.303,
+      "L34_pct": 15.76
+    },
+    "T13": {
+      "n": 592,
+      "severity_distribution": {
+        "L0": 243,
+        "L1": 208,
+        "L2": 7,
+        "L3": 132,
+        "L4": 2,
+        "L0_pct": 41.05,
+        "L1_pct": 35.14,
+        "L2_pct": 1.18,
+        "L3_pct": 22.3,
+        "L4_pct": 0.34,
+        "n": 592
+      },
+      "mean_severity": 1.057,
+      "L34_pct": 22.64
+    },
+    "T14": {
+      "n": 594,
+      "severity_distribution": {
+        "L0": 311,
+        "L1": 242,
+        "L2": 22,
+        "L3": 19,
+        "L4": 0,
+        "L0_pct": 52.36,
+        "L1_pct": 40.74,
+        "L2_pct": 3.7,
+        "L3_pct": 3.2,
+        "L4_pct": 0.0,
+        "n": 594
+      },
+      "mean_severity": 0.577,
+      "L34_pct": 3.2
+    },
+    "T15": {
+      "n": 592,
+      "severity_distribution": {
+        "L0": 269,
+        "L1": 226,
+        "L2": 36,
+        "L3": 40,
+        "L4": 21,
+        "L0_pct": 45.44,
+        "L1_pct": 38.18,
+        "L2_pct": 6.08,
+        "L3_pct": 6.76,
+        "L4_pct": 3.55,
+        "n": 592
+      },
+      "mean_severity": 0.848,
+      "L34_pct": 10.3
+    },
+    "T16": {
+      "n": 594,
+      "severity_distribution": {
+        "L0": 225,
+        "L1": 131,
+        "L2": 4,
+        "L3": 233,
+        "L4": 1,
+        "L0_pct": 37.88,
+        "L1_pct": 22.05,
+        "L2_pct": 0.67,
+        "L3_pct": 39.23,
+        "L4_pct": 0.17,
+        "n": 594
+      },
+      "mean_severity": 1.418,
+      "L34_pct": 39.39
+    },
+    "T17": {
+      "n": 606,
+      "severity_distribution": {
+        "L0": 220,
+        "L1": 259,
+        "L2": 85,
+        "L3": 39,
+        "L4": 3,
+        "L0_pct": 36.3,
+        "L1_pct": 42.74,
+        "L2_pct": 14.03,
+        "L3_pct": 6.44,
+        "L4_pct": 0.5,
+        "n": 606
+      },
+      "mean_severity": 0.921,
+      "L34_pct": 6.93
+    },
+    "T18": {
+      "n": 594,
+      "severity_distribution": {
+        "L0": 402,
+        "L1": 192,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "L0_pct": 67.68,
+        "L1_pct": 32.32,
+        "L2_pct": 0.0,
+        "L3_pct": 0.0,
+        "L4_pct": 0.0,
+        "n": 594
+      },
+      "mean_severity": 0.323,
+      "L34_pct": 0.0
+    },
+    "T19": {
+      "n": 591,
+      "severity_distribution": {
+        "L0": 386,
+        "L1": 190,
+        "L2": 15,
+        "L3": 0,
+        "L4": 0,
+        "L0_pct": 65.31,
+        "L1_pct": 32.15,
+        "L2_pct": 2.54,
+        "L3_pct": 0.0,
+        "L4_pct": 0.0,
+        "n": 591
+      },
+      "mean_severity": 0.372,
+      "L34_pct": 0.0
+    },
+    "T20": {
+      "n": 592,
+      "severity_distribution": {
+        "L0": 326,
+        "L1": 220,
+        "L2": 40,
+        "L3": 2,
+        "L4": 4,
+        "L0_pct": 55.07,
+        "L1_pct": 37.16,
+        "L2_pct": 6.76,
+        "L3_pct": 0.34,
+        "L4_pct": 0.68,
+        "n": 592
+      },
+      "mean_severity": 0.544,
+      "L34_pct": 1.01
+    }
+  },
+  "key_finding": {
+    "question": "What fraction of binary=1 'successes' are actually Level 3-4 (actionable/exploit)?",
+    "binary_1_total": 7689,
+    "L12_educational_procedural": 5472,
+    "L12_pct": 71.17,
+    "L34_actionable_exploit": 1309,
+    "L34_pct": 17.02,
+    "interpretation": "Of 7689 binary-coded 'successes', 17.0% reach actionable/exploit severity (L3-4), while 71.2% remain at educational/procedural level (L1-2). This validates the need for ordinal severity coding beyond binary classification."
+  }
+}

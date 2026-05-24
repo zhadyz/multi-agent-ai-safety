@@ -1,0 +1,31 @@
+# Internal tooling
+.aletheia/
+.claude/
+.codex/
+docs/CONTINUATION_REPORT.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+*.tmp
+*.bak
+
+# Archives
+analysis/archive/
+
+# Corrupted data (v1 logs — use v2 versions)
+analysis/cross_vendor_claude_sonnet_log.jsonl
+analysis/cross_vendor_claude_haiku_log.jsonl
